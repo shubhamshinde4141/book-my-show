@@ -1,0 +1,10 @@
+
+
+1. HOC : 
+--> Higher order components
+
+2. Layout First Approach : 
+--> This is used to set the contents in the page.
+
+3. React Router DOM = Used For Routing to Different pages ( for Static Application )
+4. 
