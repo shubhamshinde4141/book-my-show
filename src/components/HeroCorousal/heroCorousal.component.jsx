@@ -27,10 +27,10 @@ const HeroCarousal = () => {
     };
 
     const images = [
-        "https://images.unsplash.com/photo-1563990308267-cd6d3cc09318?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-        "https://images.unsplash.com/photo-1618307147562-8b3b1b1957f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
-        "https://images.unsplash.com/photo-1511994298241-608e28f14fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80",
-        "https://images.unsplash.com/photo-1582556103222-69d09785392a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80",
+        "https://in.bmscdn.com/promotions/cms/creatives/1627726259946_wdweb2a.jpg",
+        "https://in.bmscdn.com/promotions/cms/creatives/1626372121139_bsm_1280x500_romcom_1.jpg",
+        "https://in.bmscdn.com/promotions/cms/creatives/1627630928738_ispweb.jpg",
+        "https://in.bmscdn.com/promotions/cms/creatives/1627630928738_ispweb.jpg",
        
     ]
 
