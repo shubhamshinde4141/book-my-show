@@ -34,13 +34,9 @@ var Settings = {
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 2,
-                centerMode: true,
-                //rows: 2,
-                infinite: true,
-                centerPadding: "20px",
-                swipeToSlide: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                
                 
 
             }

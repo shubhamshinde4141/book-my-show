@@ -15,10 +15,21 @@ const HomePage = () => {
         <>
             <div className="flex flex-col gap-6">
 
+
+            <div className="container mx-auto w-4/5"> 
+                    <img
+                        src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/lead-in-v3-collection-202102040828.png"
+                        alt="middle_Image"
+                        className="w-full h-full" />
+                </div>
+
             <div className="container mx-auto px-5">
                 <h1 className="text-2xl font-bold px-4 py-3 text-gray-800">The Best of Entertainment</h1>
                 <EntertainmentCardSlider />  
                 </div>
+
+
+                
                 
             {/**This Block is for Premier of Movies Block ---- Friday premier */}
             <div className="bg-PremierBg-700 py-6">
