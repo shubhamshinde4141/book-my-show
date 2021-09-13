@@ -1,9 +1,22 @@
+import axios from "axios";
 import React from "react";
+import { useEffect, useState } from "react";
 import HeroSlider from "react-slick";
 
 
 
 const HeroCarousal = () => {
+
+    const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        const requestNowPlayingMovies = async () => {
+            const getImages = await axios.get("/movie/now_playing");
+            //console.log(getImages);
+            setImages(getImages.data.results);
+        };
+        requestNowPlayingMovies();
+    }, []);
 
     const SettingsLG = {
         centerMode: true,
@@ -26,13 +39,7 @@ const HeroCarousal = () => {
     
     };
 
-    const images = [
-        "https://in.bmscdn.com/promotions/cms/creatives/1627726259946_wdweb2a.jpg",
-        "https://in.bmscdn.com/promotions/cms/creatives/1626372121139_bsm_1280x500_romcom_1.jpg",
-        "https://in.bmscdn.com/promotions/cms/creatives/1627630928738_ispweb.jpg",
-        "https://in.bmscdn.com/promotions/cms/creatives/1627630928738_ispweb.jpg",
-       
-    ]
+    
 
     return (
         <>
@@ -42,7 +49,7 @@ const HeroCarousal = () => {
                 {
                     images.map((image) => (
                         <div className="w-full h-44 md:h-64 py-4 rounded:md">
-                            <img src={ image} alt="test" className="w-full h-full rounded-md"/>
+                            <img src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`} alt="test" className="w-full h-full rounded-md"/>
                         </div>
                     ))
                 }
@@ -57,7 +64,7 @@ const HeroCarousal = () => {
                 {
                     images.map((image) => (
                         <div className="w-full h-96 px-2 py-3 ">
-                            <img src={ image} alt="test" className="w-full h-full rounded-md"/>
+                            <img src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`} alt="test" className="w-full h-full rounded-md"/>
                         </div>
                     ))
                 }
